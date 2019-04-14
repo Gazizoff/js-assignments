@@ -22,6 +22,8 @@
  *    'Sun, 17 May 1998 03:00:00 GMT+01' => Date()
  */
 function parseDataFromRfc2822(value) {
+   var mydate = new Date(value);
+   return mydate;
    throw new Error('Not implemented');
 }
 
@@ -37,6 +39,8 @@ function parseDataFromRfc2822(value) {
  *    '2016-01-19T08:07:37Z' => Date()
  */
 function parseDataFromIso8601(value) {
+   var xx = Date.parse(value);
+      return xx;
    throw new Error('Not implemented');
 }
 
